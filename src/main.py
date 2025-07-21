@@ -1,12 +1,19 @@
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+
+from src.controller.yfinance_controller import router as YFinanceController
 from src.services.mongo_service import MongoService
 from src.services.redis_service import RedisService
+import logging
+
 
 app = FastAPI()
+app.include_router(YFinanceController)
 mongo_service = MongoService()
 redis_service = RedisService()
+
+logging.basicConfig(level=logging.INFO)
 
 class MongoInsertRequest(BaseModel):
     collection: str

@@ -1,3 +1,4 @@
+from src.domain.mongo_data import MongoData
 from src.infra.connection_manager import connection_manager
 
 class MongoService:
