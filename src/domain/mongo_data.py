@@ -1,15 +1,13 @@
 
 from datetime import date
 
-from pandas.core.arrays.arrow import ListAccessor
-
 
 class MongoData:
     """
     A class to represent MongoDB data.
     """
 
-    def __init__(self, _id: str, data: list[dict]):
+    def  __init__(self, _id: str, data: list[dict]):
         """
         Initializes the MongoData instance.
 

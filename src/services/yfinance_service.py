@@ -1,6 +1,6 @@
 import yfinance as yf
 
-from src.constants.TimeConstants import ONE_DAY, THIRTY_MINUTES_SECONDS
+from src.constants.time_constants import ONE_DAY, THIRTY_MINUTES_SECONDS
 from src.domain.mongo_data import MongoData
 from src.services.mongo_service import MongoService
 from datetime import date, datetime
