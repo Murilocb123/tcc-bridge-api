@@ -1,0 +1,12 @@
+app:
+  service_name: "yf_price_fetcher"
+  schedule_minutes: 15
+  chunk_size: 50
+  interval: "1d"
+  period: "max"
+  use_start_end: false
+  start_date: "max"
+  end_date: null
+  auto_adjust: true
+  actions: true
+  timezone: "America/Sao_Paulo"
